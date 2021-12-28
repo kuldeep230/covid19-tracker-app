@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin flexBox() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button($theme: $button) {
+  width: auto;
+  height: auto;
+  padding: 0.7em;
+  background-color: $theme;
+  border: none;
+  border-radius: 5px;
+}
+
+@mixin flexDireCol() {
+  display: flex;
+  flex-direction: column;
+  // gap: 1em;
+}
