@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,sBAAsB,CAAC;ECCrB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EDDnB,GAAG,EAAE,GAAG;CACT",
     "sources": [
-        "casesBubble.scss"
+        "casesBubble.scss",
+        "../../sassStyles/_mixins.scss",
+        "../../sassStyles/_variables.scss"
     ],
     "names": [],
     "file": "casesBubble.css"

@@ -1,0 +1,6 @@
+@import "../../sassStyles/mixins";
+
+.casesbubble-container {
+  @include flexBox;
+  gap: 3em;
+}

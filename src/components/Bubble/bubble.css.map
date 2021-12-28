@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAGA,AAAA,iBAAiB,CAAC;EAChB,gBAAgB,ECDJ,OAAO;EDEnB,KAAK,EAAE,OAAmB;EAC1B,aAAa,EAAE,GAAG;EAClB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;EELhB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EFKnB,cAAc,EAAE,MAAM;EACtB,GAAG,EAAE,GAAG;CAYT;;AApBD,AAUE,iBAVe,CAUf,YAAY,AAAA,UAAW,CAAA,CAAC,EAAE;EACxB,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,GAAG;CACjB;;AAbH,AAeE,iBAfe,CAef,YAAY,AAAA,UAAW,CAAA,CAAC,EAAE;EACxB,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,qBAAqB;CAC7B",
     "sources": [
-        "bubble.scss"
+        "bubble.scss",
+        "../../sassStyles/_variables.scss",
+        "../../sassStyles/_mixins.scss",
+        "../../sassStyles/_variables.scss"
     ],
     "names": [],
     "file": "bubble.css"

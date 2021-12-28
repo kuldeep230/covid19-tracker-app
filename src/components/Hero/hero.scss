@@ -1,6 +1,9 @@
 @import "../../sassStyles/mixins";
 
 .hero-container {
+  @include flexDireCol;
+  gap: 3em;
+
   .totalcases-wrapper {
     @include flexBox;
   }

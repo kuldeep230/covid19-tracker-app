@@ -27,7 +27,9 @@ const Hero = () => {
           </div>
         </section>
       </div>
-      <div className="bubble-wrapper">{/* <CasesBubble /> */}</div>
+      <div className="bubble-wrapper">
+        <CasesBubble />
+      </div>
     </div>
   );
 };

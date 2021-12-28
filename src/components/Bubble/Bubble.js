@@ -1,10 +1,11 @@
 import React from "react";
+import "./bubble.css";
 
 function Bubble() {
   return (
     <div className="bubble-container">
-      <p>Today cases</p>
-      <p>10000</p>
+      <p className="today-cases">Today cases</p>
+      <p className="today-cases">10000</p>
     </div>
   );
 }
