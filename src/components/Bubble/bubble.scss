@@ -5,20 +5,39 @@
   background-color: $matte-white;
   color: rgba(25, 25, 25, 1);
   border-radius: 50%;
+  outline: 5px solid $button;
   min-width: 10em;
   min-height: 10em;
   @include flexBox;
   flex-direction: column;
+  text-align: center;
   gap: 1em;
-
-  .today-cases:nth-child(1) {
-    font-size: 1.2em;
-    font-weight: 500;
+  position: relative;
+  z-index: 0;
+  ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.6);
   }
 
-  .today-cases:nth-child(2) {
-    font-size: 1.5em;
+  .bubble-title {
+    font-size: 1.2em;
+    width: calc(100% - 10%);
+    font-weight: 500;
+    color: $matte-white;
+  }
+
+  .bubble-value {
+    font-size: 1.3em;
     font-weight: 600;
-    color: rgba(25, 25, 25, 0.8);
+    color: $button;
   }
 }

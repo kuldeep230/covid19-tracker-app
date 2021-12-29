@@ -2,7 +2,7 @@
 
 .hero-container {
   @include flexDireCol;
-  gap: 3em;
+  gap: 5em;
 
   .totalcases-wrapper {
     @include flexBox;
@@ -18,7 +18,7 @@
     justify-items: center;
     align-content: center;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4em;
+    gap: 5em;
     :nth-child(3) {
       grid-column: 1 / span 2;
       margin: 0 auto;
@@ -32,21 +32,57 @@
         font-size: 2em;
       }
       span {
-        font-size: 4.5em;
+        font-size: 3.5em;
+      }
+    }
+    .total-cases {
+      span {
+        color: rgba($matte-white, 0.7);
+      }
+    }
+    .total-deaths {
+      span {
+        color: rgba($button, 0.7);
+      }
+    }
+    .total-recovered {
+      span {
+        color: rgba($matte-green, 0.7);
       }
     }
   }
 
   .hero-section-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    ::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
     .heroBg {
-      width: auto;
-      height: auto;
+      position: relative;
       img {
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
         -o-object-fit: cover;
         object-fit: cover;
-        border-bottom-left-radius: 2em;
       }
     }
   }

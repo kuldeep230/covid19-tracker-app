@@ -17,6 +17,12 @@
       }
     }
 
+    .last-updated {
+      p {
+        font-size: 1.2em;
+      }
+    }
+
     .list-wrapper {
       ul {
         @include flexBox;

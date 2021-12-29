@@ -6,7 +6,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3em;
+  gap: 5em;
 }
 
 .hero-container .totalcases-wrapper {
@@ -34,7 +34,7 @@
       align-content: center;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  gap: 4em;
+  gap: 5em;
   padding: 2em 1em;
 }
 
@@ -60,19 +60,55 @@
 }
 
 .hero-container .hero-section-left .global-data span {
-  font-size: 4.5em;
+  font-size: 3.5em;
+}
+
+.hero-container .hero-section-left .total-cases span {
+  color: rgba(221, 221, 221, 0.7);
+}
+
+.hero-container .hero-section-left .total-deaths span {
+  color: rgba(240, 84, 84, 0.7);
+}
+
+.hero-container .hero-section-left .total-recovered span {
+  color: rgba(72, 161, 77, 0.7);
+}
+
+.hero-container .hero-section-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.hero-container .hero-section-right ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .hero-container .hero-section-right .heroBg {
-  width: auto;
-  height: auto;
+  position: relative;
 }
 
 .hero-container .hero-section-right .heroBg img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
   -o-object-fit: cover;
   object-fit: cover;
-  border-bottom-left-radius: 2em;
 }
 /*# sourceMappingURL=hero.css.map */

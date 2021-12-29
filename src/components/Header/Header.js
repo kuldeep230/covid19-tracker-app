@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { RiVirusFill } from "react-icons/ri";
 import "./header.css";
+import { connect } from "react-redux";
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 
-function Header() {
+function Header(props) {
+  const { covidDataState } = props;
   return (
     <div className="header-container">
       <nav className="nav">
@@ -15,6 +18,17 @@ function Header() {
           <span>
             <RiVirusFill />{" "}
           </span>
+        </div>
+        <div className="last-updated">
+          <p>
+            {" "}
+            Last Updated:{" "}
+            {covidDataState.loading ? (
+              <LoadingSpinner />
+            ) : (
+              new Date(covidDataState.covidData.updated).toLocaleTimeString()
+            )}{" "}
+          </p>
         </div>
         <div className="list-wrapper">
           <ul>
@@ -40,4 +54,10 @@ function Header() {
   );
 }
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    covidDataState: state.covidData,
+  };
+};
+
+export default connect(mapStateToProps)(Header);

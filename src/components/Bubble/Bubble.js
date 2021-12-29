@@ -1,13 +1,24 @@
 import React from "react";
+import { connect } from "react-redux";
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 import "./bubble.css";
 
-function Bubble() {
+function Bubble(props) {
+  const { title, data, covidDataState } = props;
   return (
     <div className="bubble-container">
-      <p className="today-cases">Today cases</p>
-      <p className="today-cases">10000</p>
+      <p className="bubble-title">{title}</p>
+      <p className="bubble-value">
+        {covidDataState.loading ? <LoadingSpinner /> : data}
+      </p>
     </div>
   );
 }
 
-export default Bubble;
+const mapStateToProps = (state) => {
+  return {
+    covidDataState: state.covidData,
+  };
+};
+
+export default connect(mapStateToProps)(Bubble);

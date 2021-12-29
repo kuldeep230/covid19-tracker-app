@@ -43,6 +43,10 @@
   margin: 0 0.2em;
 }
 
+.header-container .nav .last-updated p {
+  font-size: 1.2em;
+}
+
 .header-container .nav .list-wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
